@@ -204,14 +204,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3299B46B1683548A006304A9 /* FaceBoardDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceBoardDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3299B46B1683548A006304A9 /* FaceBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3299B46E1683548A006304A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3299B4701683548A006304A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3299B4721683548A006304A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3299B4761683548A006304A9 /* FaceBoardDome-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceBoardDome-Info.plist"; sourceTree = "<group>"; };
+		3299B4761683548A006304A9 /* FaceBoardDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceBoardDemo-Info.plist"; sourceTree = "<group>"; };
 		3299B4781683548A006304A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3299B47A1683548A006304A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3299B47C1683548A006304A9 /* FaceBoardDome-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceBoardDome-Prefix.pch"; sourceTree = "<group>"; };
+		3299B47C1683548A006304A9 /* FaceBoardDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceBoardDemo-Prefix.pch"; sourceTree = "<group>"; };
 		3299B47D1683548A006304A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3299B47E1683548A006304A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3299B4801683548A006304A9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -426,7 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				3299B49116835673006304A9 /* FaceBoard */,
-				3299B4741683548A006304A9 /* FaceBoardDome */,
+				3299B4741683548A006304A9 /* FaceBoardDemo */,
 				3299B46D1683548A006304A9 /* Frameworks */,
 				3299B46C1683548A006304A9 /* Products */,
 			);
@@ -435,7 +435,7 @@
 		3299B46C1683548A006304A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3299B46B1683548A006304A9 /* FaceBoardDome.app */,
+				3299B46B1683548A006304A9 /* FaceBoardDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -450,7 +450,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3299B4741683548A006304A9 /* FaceBoardDome */ = {
+		3299B4741683548A006304A9 /* FaceBoardDemo */ = {
 			isa = PBXGroup;
 			children = (
 				3299B47D1683548A006304A9 /* AppDelegate.h */,
@@ -460,16 +460,17 @@
 				3299B4891683548A006304A9 /* ViewController.xib */,
 				3299B4751683548A006304A9 /* Supporting Files */,
 			);
+			name = FaceBoardDemo;
 			path = FaceBoardDome;
 			sourceTree = "<group>";
 		};
 		3299B4751683548A006304A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3299B4761683548A006304A9 /* FaceBoardDome-Info.plist */,
+				3299B4761683548A006304A9 /* FaceBoardDemo-Info.plist */,
 				3299B4771683548A006304A9 /* InfoPlist.strings */,
 				3299B47A1683548A006304A9 /* main.m */,
-				3299B47C1683548A006304A9 /* FaceBoardDome-Prefix.pch */,
+				3299B47C1683548A006304A9 /* FaceBoardDemo-Prefix.pch */,
 				3299B4801683548A006304A9 /* Default.png */,
 				3299B4821683548A006304A9 /* Default@2x.png */,
 				3299B4841683548A006304A9 /* Default-568h@2x.png */,
@@ -681,9 +682,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3299B46A1683548A006304A9 /* FaceBoardDome */ = {
+		3299B46A1683548A006304A9 /* FaceBoardDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3299B48E1683548A006304A9 /* Build configuration list for PBXNativeTarget "FaceBoardDome" */;
+			buildConfigurationList = 3299B48E1683548A006304A9 /* Build configuration list for PBXNativeTarget "FaceBoardDemo" */;
 			buildPhases = (
 				3299B4671683548A006304A9 /* Sources */,
 				3299B4681683548A006304A9 /* Frameworks */,
@@ -693,9 +694,9 @@
 			);
 			dependencies = (
 			);
-			name = FaceBoardDome;
+			name = FaceBoardDemo;
 			productName = FaceBoardDome;
-			productReference = 3299B46B1683548A006304A9 /* FaceBoardDome.app */;
+			productReference = 3299B46B1683548A006304A9 /* FaceBoardDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -707,7 +708,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Blue;
 			};
-			buildConfigurationList = 3299B4661683548A006304A9 /* Build configuration list for PBXProject "FaceBoardDome" */;
+			buildConfigurationList = 3299B4661683548A006304A9 /* Build configuration list for PBXProject "FaceBoardDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -719,7 +720,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3299B46A1683548A006304A9 /* FaceBoardDome */,
+				3299B46A1683548A006304A9 /* FaceBoardDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -1013,10 +1014,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FaceBoardDome/FaceBoardDome-Prefix.pch";
-				INFOPLIST_FILE = "FaceBoardDome/FaceBoardDome-Info.plist";
+				GCC_PREFIX_HEADER = "FaceBoardDome/FaceBoardDemo-Prefix.pch";
+				INFOPLIST_FILE = "FaceBoardDome/FaceBoardDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FaceBoardDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1025,10 +1026,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FaceBoardDome/FaceBoardDome-Prefix.pch";
-				INFOPLIST_FILE = "FaceBoardDome/FaceBoardDome-Info.plist";
+				GCC_PREFIX_HEADER = "FaceBoardDome/FaceBoardDemo-Prefix.pch";
+				INFOPLIST_FILE = "FaceBoardDome/FaceBoardDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FaceBoardDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1036,7 +1037,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3299B4661683548A006304A9 /* Build configuration list for PBXProject "FaceBoardDome" */ = {
+		3299B4661683548A006304A9 /* Build configuration list for PBXProject "FaceBoardDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3299B48C1683548A006304A9 /* Debug */,
@@ -1045,13 +1046,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3299B48E1683548A006304A9 /* Build configuration list for PBXNativeTarget "FaceBoardDome" */ = {
+		3299B48E1683548A006304A9 /* Build configuration list for PBXNativeTarget "FaceBoardDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3299B48F1683548A006304A9 /* Debug */,
 				3299B4901683548A006304A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
