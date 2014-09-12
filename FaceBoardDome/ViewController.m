@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+@property (assign, nonatomic) BOOL faceBoardShow;
+
 @end
 
 @implementation ViewController
@@ -20,8 +22,10 @@
 {
     [super viewDidLoad];
     _faceBoard = [[FaceBoard alloc]init];
+    _faceBoard.inputTextView = self.textView;
     [self.textView becomeFirstResponder];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -40,16 +44,29 @@
     [self setTextView:nil];
     [_faceBoard release];
     _faceBoard = nil;
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIKeyboardDidHideNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidShowNotification object:nil];
     [super viewDidUnload];
 }
 - (IBAction)faceBoardClick:(id)sender {
     [self.textView resignFirstResponder];
 }
 
-- (void)keyboardDidHide:(NSNotification*)notification {
-    _faceBoard.inputTextView = self.textView;
-    self.textView.inputView = _faceBoard;
+- (void)keyboardDidHide:(NSNotification *)notification {
+    if (self.faceBoardShow) {
+        self.textView.inputView = nil;
+    } else {
+        self.textView.inputView = _faceBoard;
+    }
     [self.textView becomeFirstResponder];
 }
+
+- (void)keyboardDidShow:(NSNotification *)notification{
+    if (!self.textView.inputView) {
+        self.faceBoardShow = NO;
+    } else {
+        self.faceBoardShow = YES;
+    }
+}
+
 @end
